@@ -45,3 +45,6 @@ a:hover{
 	column-count: 3;
 	column-gap: 40px;
 }
+ul li{
+	margin-bottom: 0.4em;
+}
