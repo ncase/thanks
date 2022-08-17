@@ -46,15 +46,15 @@ if(url.searchParams.get('credits')){
         let pageHeight = document.body.getBoundingClientRect().height,
             screenHeight = window.innerHeight,
             maxScrollTop = pageHeight - screenHeight - 5; // 5px for margin of error
-        document.body.scrollTop = 0;
+        window.scrollTo(0,0);
         let timer = 2,
             prevTimer = 1.9;
         let anim = ()=>{
 
             // Scroll
-            document.body.scrollTop += 2;
-            if(document.body.scrollTop >= maxScrollTop){
-                document.body.scrollTop = 0;
+            window.scrollTo(0, window.scrollY+2);
+            if(window.scrollY >= maxScrollTop){
+                window.scrollTo(0,0);
             }
 
             // Heart dance
