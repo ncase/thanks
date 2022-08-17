@@ -13,6 +13,14 @@ if(url.searchParams.get('credits')){
         .heart::before{ content:'💖'; }
         .heart[lean=left]{ transform:rotate(-10deg); }
         .heart[lean=right]{ transform:rotate(10deg); }
+        @media (max-width: 660px) {
+        	#thanks{
+        		width: 440px;
+        	}
+        	#peeps{
+        		column-count: 2;
+        	}
+        }
         `;
     document.head.appendChild(overrideStyle);
 

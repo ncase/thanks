@@ -42,9 +42,10 @@ a:hover{
 #peeps{
 	margin-top: 40px;
 	font-size: 20px;
-		column-count: 4;
+	column-count: 4;
 	column-gap: 40px;
 }
 ul li{
 	margin-bottom: 0.4em;
 }
+
