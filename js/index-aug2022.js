@@ -43,13 +43,15 @@ if(url.searchParams.get('credits')){
         ];
 
         // Scroll down (& anim hearts)
-        let pageHeight = document.body.getBoundingClientRect().height,
-            screenHeight = window.innerHeight,
-            maxScrollTop = pageHeight - screenHeight - 5; // 5px for margin of error
         window.scrollTo(0,0);
         let timer = 2,
             prevTimer = 1.9;
         let anim = ()=>{
+
+            // Calculate this nonsense every frame, whatever.
+            let pageHeight = document.body.getBoundingClientRect().height,
+                screenHeight = window.innerHeight,
+                maxScrollTop = pageHeight - screenHeight - 5; // 5px for margin of error
 
             // Scroll
             window.scrollTo(0, window.scrollY+2);
